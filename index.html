@@ -39,31 +39,45 @@
 
                         <article id="intro">
                             <style>
+                                /* 서비스 내용 메인 타이틀 */
+                                .intro-main-title {
+                                    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+                                    padding-bottom: 0.5em;
+                                    margin-bottom: 1.5em;
+                                    font-size: 2em;
+                                    font-weight: bold;
+                                    color: #ffffff;
+                                }
                                 .service-header {
                                     margin-bottom: 2em;
                                 }
                                 .service-sub {
+                                    color: #63b3ed; /* 어두운 배경에서 잘 보이는 밝은 파란색 */
                                     font-weight: bold;
                                     font-size: 0.85em;
                                     letter-spacing: 0.15em;
                                     margin-bottom: 10px;
                                     display: block;
-                                    opacity: 0.6;
                                 }
+                                /* 카드 스타일 (어두운 반투명 배경) */
                                 .service-card {
-                                    border: solid 1px rgba(144, 144, 144, 0.25);
+                                    background-color: rgba(255, 255, 255, 0.05);
+                                    border: solid 1px rgba(255, 255, 255, 0.15);
                                     border-radius: 8px;
                                     padding: 2em;
                                     margin-bottom: 2em;
                                 }
+                                /* 카드 서브 타이틀 */
                                 .service-title {
                                     font-size: 1.25em;
                                     font-weight: bold;
-                                    border-left: solid 5px rgba(144, 144, 144, 0.5);
+                                    color: #ffffff;
+                                    border-left: solid 6px #63b3ed;
                                     padding-left: 15px;
                                     margin-bottom: 1.5em;
                                     line-height: 1.3;
                                 }
+                                /* 사각형 불릿 리스트 */
                                 .service-list {
                                     list-style: none;
                                     padding-left: 0;
@@ -73,6 +87,7 @@
                                     position: relative;
                                     padding-left: 20px;
                                     margin-bottom: 0.8em;
+                                    color: inherit;
                                 }
                                 .service-list li::before {
                                     content: "";
@@ -81,24 +96,29 @@
                                     top: 0.4em;
                                     width: 8px;
                                     height: 8px;
-                                    background-color: rgba(144, 144, 144, 0.5);
+                                    background-color: #63b3ed;
                                 }
+                                /* 회색 주의사항 박스 */
                                 .gray-note {
-                                    background-color: rgba(144, 144, 144, 0.05);
-                                    border-left: solid 4px rgba(144, 144, 144, 0.25);
+                                    background-color: rgba(255, 255, 255, 0.05);
+                                    border-left: solid 4px rgba(255, 255, 255, 0.2);
                                     padding: 1.2em 1.5em;
                                     border-radius: 0 4px 4px 0;
                                     margin-bottom: 0;
                                     font-size: 0.9em;
+                                    color: #e2e8f0;
                                 }
-                                .border-note {
-                                    background-color: rgba(144, 144, 144, 0.02);
-                                    border: solid 1px rgba(144, 144, 144, 0.25);
+                                /* 파란색 강조 박스 (시험성적서) */
+                                .blue-note {
+                                    background-color: rgba(99, 179, 237, 0.1);
+                                    border: solid 1px rgba(99, 179, 237, 0.3);
                                     padding: 1.2em 1.5em;
                                     border-radius: 6px;
                                     font-weight: bold;
                                     margin-bottom: 0;
+                                    color: #63b3ed;
                                 }
+                                /* 태그 스타일 */
                                 .tag-container {
                                     display: flex;
                                     gap: 10px;
@@ -106,8 +126,9 @@
                                     margin-top: 15px;
                                 }
                                 .sq-tag {
-                                    background-color: rgba(144, 144, 144, 0.1);
-                                    border: solid 1px rgba(144, 144, 144, 0.2);
+                                    background-color: rgba(99, 179, 237, 0.1);
+                                    color: #63b3ed;
+                                    border: solid 1px rgba(99, 179, 237, 0.3);
                                     padding: 8px 16px;
                                     border-radius: 6px;
                                     font-weight: bold;
@@ -122,10 +143,10 @@
 
                             <header class="service-header">
                                 <span class="service-sub">SERVICE GUIDE</span>
-                                <h2 class="major">サービス内容</h2>
-                                <span class="image main"><img src="images/pic00.jpg" alt="電気工事 作業現場" /></span>
+                                <h2 class="intro-main-title">サービス内容</h2>
                             </header>
 
+                            <!-- 첫 번째 카드 -->
                             <div class="service-card">
                                 <div class="service-title">高圧ケーブル端末作成 〜 端子接続</div>
                                 <ul class="service-list">
@@ -136,18 +157,20 @@
                                 <p class="gray-note">※柱上端末は非対応とさせていただきます。</p>
                             </div>
 
+                            <!-- 두 번째 카드 -->
                             <div class="service-card">
                                 <div class="service-title">高圧交流耐圧試験 ／ 方向性地絡継電器動作試験</div>
-                                <p>
+                                <p style="line-height: 1.7; margin-bottom: 1.5em;">
                                     専用試験機とポータブル電源による<br>
                                     準備時間短縮、省スペース、低騒音でのスマートな竣工試験をご提供いたします。
                                 </p>
-                                <p class="border-note">【試験成績書】 即日発行（PDFファイル送信）</p>
+                                <p class="blue-note">【試験成績書】 即日発行（PDFファイル送信）</p>
                             </div>
 
+                            <!-- 세 번째 카드 -->
                             <div class="service-card">
                                 <div class="service-title">緊急対応</div>
-                                <p style="font-weight: bold; margin-bottom: 1em;">関東エリア 24時間対応</p>
+                                <p style="font-weight: bold; color: #ffffff; margin-bottom: 1em;">関東エリア 24時間対応</p>
                                 <p style="margin-bottom: 0;">屋内用端末材、接続端子については各材を常備：</p>
                                 <div class="tag-container">
                                     <span class="sq-tag">22 sq</span>
@@ -200,49 +223,199 @@
                         </article>
 
                         <article id="about">
-                            <h2 class="major">料金表</h2>
+                            <style>
+                                /* 요금표 타이틀 */
+                                .price-main-title {
+                                    text-align: center;
+                                    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+                                    padding-bottom: 0.8em;
+                                    margin-bottom: 1.5em;
+                                    font-size: 1.8em;
+                                    font-weight: bold;
+                                    letter-spacing: 0.1em;
+                                    color: #ffffff;
+                                }
+                                .price-card {
+                                    border: solid 1px rgba(255, 255, 255, 0.15);
+                                    border-radius: 8px;
+                                    margin-bottom: 2em;
+                                    overflow: hidden;
+                                    background-color: rgba(255, 255, 255, 0.05);
+                                }
+                                .price-card-header {
+                                    background-color: rgba(255, 255, 255, 0.1);
+                                    color: #ffffff;
+                                    padding: 1.2em 1.5em;
+                                    font-weight: bold;
+                                    font-size: 1.1em;
+                                    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
+                                }
+                                .price-card-body {
+                                    padding: 1.5em;
+                                    background-color: transparent;
+                                }
+                                .price-row {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 0.8em 0;
+                                }
+                                .price-group {
+                                    display: flex;
+                                    align-items: center;
+                                }
+                                .price-label-main {
+                                    width: 80px;
+                                    font-weight: bold;
+                                    flex-shrink: 0;
+                                }
+                                .price-label-sub {
+                                    width: 80px;
+                                    flex-shrink: 0;
+                                }
+                                .price-value {
+                                    font-weight: bold;
+                                    font-size: 1.1em;
+                                    text-align: right;
+                                    color: #ffffff;
+                                }
+                                /* 항목 사이 점선 스타일 */
+                                .price-divider {
+                                    border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
+                                    margin: 0.5em 0 1em 0;
+                                }
+                                /* 주의사항 강조 스타일 (어두운 배경용 오렌지/노랑계열) */
+                                .price-notes {
+                                    margin-top: 1em;
+                                    padding-top: 1em;
+                                    border-top: dotted 1px rgba(255, 255, 255, 0.25);
+                                    font-size: 0.9em;
+                                    color: #ff9f43; 
+                                    font-weight: bold;
+                                    line-height: 1.6;
+                                }
+                                /* 긴급대응 강조 스타일 */
+                                .price-emergency {
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    padding: 1.5em;
+                                    border: solid 2px #f39c12; 
+                                    color: #fbd38d; /* 시인성 높은 밝은 주황/노랑 텍스트 */
+                                    background-color: rgba(243, 156, 18, 0.1); 
+                                    border-radius: 8px;
+                                    margin-bottom: 2em;
+                                    font-weight: bold;
+                                    font-size: 1.1em;
+                                }
+                                .price-footer-note {
+                                    border: solid 1px rgba(255, 255, 255, 0.15);
+                                    border-radius: 8px;
+                                    padding: 1.2em;
+                                    text-align: center;
+                                    font-size: 0.9em;
+                                    color: #e2e8f0;
+                                    background-color: rgba(255, 255, 255, 0.05);
+                                }
+                                @media screen and (max-width: 480px) {
+                                    .price-emergency {
+                                        flex-direction: column;
+                                        gap: 10px;
+                                        text-align: center;
+                                    }
+                                }
+                            </style>
+
+                            <h2 class="price-main-title">中村電気 料金表</h2>
                             
-                            <div class="table-wrapper">
-                                <table>
-                                    <thead>
-                                        <tr>
-                                            <th>業務項目</th>
-                                            <th>昼間料金</th>
-                                            <th>夜間料金</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td>
-                                                <strong>高圧ケーブル端末作成</strong><br>
-                                                <span style="font-size: 0.85em; opacity: 0.8;">
-                                                    ※ 上記は一系統分となります。<br />
-                                                    ※ 端末、接続材料代が別途掛かります。<br />
-                                                    ※ 柱上端末は非対応とさせていただきます。
-                                                </span>
-                                            </td>
-                                            <td>¥30,000</td>
-                                            <td>¥38,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>高圧交流耐圧試験</strong></td>
-                                            <td>¥50,000</td>
-                                            <td>¥64,000</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>地絡継電器動作試験</strong></td>
-                                            <td>¥30,000</td>
-                                            <td>¥38,500</td>
-                                        </tr>
-                                        <tr>
-                                            <td><strong>緊急対応</strong></td>
-                                            <td colspan="2">上記業務費用 ＋ ¥20,000</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
+                            <div class="price-card">
+                                <div class="price-card-header">☆高圧ケーブル端末作成</div>
+                                <div class="price-card-body">
+                                    <div style="display: flex; flex-direction: column;">
+                                        <!-- (片側) 영역 -->
+                                        <div>
+                                            <div class="price-row">
+                                                <div class="price-group">
+                                                    <span class="price-label-main">(片側)</span>
+                                                    <span class="price-label-sub">昼間</span>
+                                                </div>
+                                                <span class="price-value">¥30,000</span>
+                                            </div>
+                                            <div class="price-row">
+                                                <div class="price-group">
+                                                    <span class="price-label-main"></span>
+                                                    <span class="price-label-sub">夜間</span>
+                                                </div>
+                                                <span class="price-value">¥38,000</span>
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- 점선 추가 -->
+                                        <div class="price-divider"></div>
+                                        
+                                        <!-- (両側) 영역 -->
+                                        <div>
+                                            <div class="price-row">
+                                                <div class="price-group">
+                                                    <span class="price-label-main">(両側)</span>
+                                                    <span class="price-label-sub">昼間</span>
+                                                </div>
+                                                <span class="price-value">¥50,000</span>
+                                            </div>
+                                            <div class="price-row">
+                                                <div class="price-group">
+                                                    <span class="price-label-main"></span>
+                                                    <span class="price-label-sub">夜間</span>
+                                                </div>
+                                                <span class="price-value">¥64,000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- 주의사항 강조 텍스트 -->
+                                    <div class="price-notes">
+                                        ※端末、接続材料代が別途掛かります。<br>
+                                        ※柱上端末は非対応
+                                    </div>
+                                </div>
                             </div>
-                            
-                            <p>※ 上記は税抜価格、別途消費税をお願いします。</p>
+
+                            <div class="price-card">
+                                <div class="price-card-header">☆高圧交流耐圧試験</div>
+                                <div class="price-card-body">
+                                    <div class="price-row">
+                                        <span class="price-label-sub">昼間</span>
+                                        <span class="price-value">¥50,000</span>
+                                    </div>
+                                    <div class="price-row">
+                                        <span class="price-label-sub">夜間</span>
+                                        <span class="price-value">¥64,000</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="price-card">
+                                <div class="price-card-header">☆地絡継電器動作試験</div>
+                                <div class="price-card-body">
+                                    <div class="price-row">
+                                        <span class="price-label-sub">昼間</span>
+                                        <span class="price-value">¥30,000</span>
+                                    </div>
+                                    <div class="price-row">
+                                        <span class="price-label-sub">夜間</span>
+                                        <span class="price-value">¥38,500</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- 긴급대응 강조 디자인 -->
+                            <div class="price-emergency">
+                                <span>☆緊急対応</span>
+                                <span>上記業務費用 + ¥20,000</span>
+                            </div>
+
+                            <div class="price-footer-note">
+                                ※上記は税抜価格、別途消費税をお願いします。
+                            </div>
                         </article>
 
                         <article id="contact">

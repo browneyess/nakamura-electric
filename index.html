@@ -11,454 +11,427 @@
 
         <div id="wrapper">
 
-                <header id="header">
-                        <div class="logo" style="overflow: hidden; padding: 0;">
-                            <img src="images/logo.jpg" alt="中村電気 ロゴ" style="width: 100%; height: 100%; object-fit: cover;" />
-                        </div>
-                        <div class="content">
-                            <div class="inner">
-                                <h1>中村電気</h1>
-                                <p>
-                                高圧ケーブル端末作成から高圧交流耐圧試験まで<br />
-                                中村電気にお任せください！<br />
-                                試験成績書は即日発行<br />
-                                接続材各サイズ常備で関東エリア24時間緊急対応可能</p>
-                            </div>
-                        </div>
-                        <nav>
-                            <ul>
-                                <li><a href="#intro">サービス内容</a></li>
-                                <li><a href="#work">会社紹介</a></li>
-                                <li><a href="#about">料金表</a></li>
-                                <li><a href="#contact">お問い合わせ</a></li>
-                            </ul>
-                        </nav>
+            <header id="header">
+                <div class="logo" style="overflow: hidden; padding: 0;">
+                    <img src="images/logo.jpg" alt="中村電気 ロゴ" style="width: 100%; height: 100%; object-fit: cover;" />
+                </div>
+                <div class="content">
+                    <div class="inner">
+                        <h1>中村電気</h1>
+                        <p>
+                            高圧ケーブル端末作成から高圧交流耐圧試験、<br />
+                            方向性地絡継電器動作試験まで<br />
+                            中村電気にお任せください！！！<br />
+                            試験成績書はPDFにて即日発行<br />
+                            端末、接続材各種常備で関東エリア24時間緊急対応可能
+                        </p>
+                    </div>
+                </div>
+                <nav>
+                    <ul>
+                        <li><a href="#intro">サービス内容</a></li>
+                        <li><a href="#work">会社紹介</a></li>
+                        <li><a href="#about">料金表</a></li>
+                        <li><a href="#contact">お問い合わせ</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <div id="main">
+
+                <article id="intro">
+                    <style>
+                        /* 서비스 내용 메인 타이틀 */
+                        .intro-main-title {
+                            border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+                            padding-bottom: 0.5em;
+                            margin-bottom: 1.5em;
+                            font-size: 2em;
+                            font-weight: bold;
+                            color: #ffffff;
+                        }
+                        .service-header { margin-bottom: 2em; }
+                        .service-sub {
+                            color: #63b3ed; font-weight: bold; font-size: 0.85em; letter-spacing: 0.15em; margin-bottom: 10px; display: block;
+                        }
+                        .service-card {
+                            background-color: rgba(255, 255, 255, 0.05); border: solid 1px rgba(255, 255, 255, 0.15); border-radius: 8px; padding: 2em; margin-bottom: 2em;
+                        }
+                        .service-title {
+                            font-size: 1.25em; font-weight: bold; color: #ffffff; border-left: solid 6px #63b3ed; padding-left: 15px; margin-bottom: 1.5em; line-height: 1.3;
+                        }
+                        .service-list { list-style: none; padding-left: 0; margin-bottom: 1.5em; }
+                        .service-list li { position: relative; padding-left: 20px; margin-bottom: 0.8em; color: inherit; }
+                        .service-list li::before {
+                            content: ""; position: absolute; left: 0; top: 0.4em; width: 8px; height: 8px; background-color: #63b3ed;
+                        }
+                        .gray-note {
+                            background-color: rgba(255, 255, 255, 0.05); border-left: solid 4px rgba(255, 255, 255, 0.2); padding: 1.2em 1.5em; border-radius: 0 4px 4px 0; margin-bottom: 0; font-size: 0.9em; color: #e2e8f0;
+                        }
+                        .blue-note {
+                            background-color: rgba(99, 179, 237, 0.1); border: solid 1px rgba(99, 179, 237, 0.3); padding: 1.2em 1.5em; border-radius: 6px; font-weight: bold; margin-bottom: 0; color: #63b3ed;
+                        }
+                        .tag-container { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 15px; }
+                        .sq-tag {
+                            background-color: rgba(99, 179, 237, 0.1); color: #63b3ed; border: solid 1px rgba(99, 179, 237, 0.3); padding: 8px 16px; border-radius: 6px; font-weight: bold; font-size: 0.9em;
+                        }
+                        @media screen and (max-width: 736px) { .service-card { padding: 1.5em; } }
+                    </style>
+
+                    <header class="service-header">
+                        <span class="service-sub">SERVICE GUIDE</span>
+                        <h2 class="intro-main-title">サービス内容</h2>
                     </header>
 
-                <div id="main">
-
-                        <article id="intro">
-                            <style>
-                                /* 서비스 내용 메인 타이틀 */
-                                .intro-main-title {
-                                    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
-                                    padding-bottom: 0.5em;
-                                    margin-bottom: 1.5em;
-                                    font-size: 2em;
-                                    font-weight: bold;
-                                    color: #ffffff;
-                                }
-                                .service-header {
-                                    margin-bottom: 2em;
-                                }
-                                .service-sub {
-                                    color: #63b3ed; /* 어두운 배경에서 잘 보이는 밝은 파란색 */
-                                    font-weight: bold;
-                                    font-size: 0.85em;
-                                    letter-spacing: 0.15em;
-                                    margin-bottom: 10px;
-                                    display: block;
-                                }
-                                /* 카드 스타일 (어두운 반투명 배경) */
-                                .service-card {
-                                    background-color: rgba(255, 255, 255, 0.05);
-                                    border: solid 1px rgba(255, 255, 255, 0.15);
-                                    border-radius: 8px;
-                                    padding: 2em;
-                                    margin-bottom: 2em;
-                                }
-                                /* 카드 서브 타이틀 */
-                                .service-title {
-                                    font-size: 1.25em;
-                                    font-weight: bold;
-                                    color: #ffffff;
-                                    border-left: solid 6px #63b3ed;
-                                    padding-left: 15px;
-                                    margin-bottom: 1.5em;
-                                    line-height: 1.3;
-                                }
-                                /* 사각형 불릿 리스트 */
-                                .service-list {
-                                    list-style: none;
-                                    padding-left: 0;
-                                    margin-bottom: 1.5em;
-                                }
-                                .service-list li {
-                                    position: relative;
-                                    padding-left: 20px;
-                                    margin-bottom: 0.8em;
-                                    color: inherit;
-                                }
-                                .service-list li::before {
-                                    content: "";
-                                    position: absolute;
-                                    left: 0;
-                                    top: 0.4em;
-                                    width: 8px;
-                                    height: 8px;
-                                    background-color: #63b3ed;
-                                }
-                                /* 회색 주의사항 박스 */
-                                .gray-note {
-                                    background-color: rgba(255, 255, 255, 0.05);
-                                    border-left: solid 4px rgba(255, 255, 255, 0.2);
-                                    padding: 1.2em 1.5em;
-                                    border-radius: 0 4px 4px 0;
-                                    margin-bottom: 0;
-                                    font-size: 0.9em;
-                                    color: #e2e8f0;
-                                }
-                                /* 파란색 강조 박스 (시험성적서) */
-                                .blue-note {
-                                    background-color: rgba(99, 179, 237, 0.1);
-                                    border: solid 1px rgba(99, 179, 237, 0.3);
-                                    padding: 1.2em 1.5em;
-                                    border-radius: 6px;
-                                    font-weight: bold;
-                                    margin-bottom: 0;
-                                    color: #63b3ed;
-                                }
-                                /* 태그 스타일 */
-                                .tag-container {
-                                    display: flex;
-                                    gap: 10px;
-                                    flex-wrap: wrap;
-                                    margin-top: 15px;
-                                }
-                                .sq-tag {
-                                    background-color: rgba(99, 179, 237, 0.1);
-                                    color: #63b3ed;
-                                    border: solid 1px rgba(99, 179, 237, 0.3);
-                                    padding: 8px 16px;
-                                    border-radius: 6px;
-                                    font-weight: bold;
-                                    font-size: 0.9em;
-                                }
-                                @media screen and (max-width: 736px) {
-                                    .service-card {
-                                        padding: 1.5em;
-                                    }
-                                }
-                            </style>
-
-                            <header class="service-header">
-                                <span class="service-sub">SERVICE GUIDE</span>
-                                <h2 class="intro-main-title">サービス内容</h2>
-                                <span class="image main"><img src="images/pic00.jpg" alt="電気工事 作業現場" /></span>
-                            </header>
-
-                            <!-- 첫 번째 카드 -->
-                            <div class="service-card">
-                                <div class="service-title">高圧ケーブル端末作成 〜 端子接続</div>
-                                <ul class="service-list">
-                                    <li>モールド端子接続</li>
-                                    <li>ピラー端子接続</li>
-                                    <li>RD端子接続</li>
-                                </ul>
-                                <p class="gray-note">※柱上端末は非対応とさせていただきます。</p>
-                            </div>
-
-                            <!-- 두 번째 카드 -->
-                            <div class="service-card">
-                                <div class="service-title">高圧交流耐圧試験 ／ 方向性地絡継電器動作試験</div>
-                                <p style="line-height: 1.7; margin-bottom: 1.5em;">
-                                    専用試験機とポータブル電源による<br>
-                                    準備時間短縮、省スペース、低騒音でのスマートな竣工試験をご提供いたします。
-                                </p>
-                                <p class="blue-note">【試験成績書】 即日発行（PDFファイル送信）</p>
-                            </div>
-
-                            <!-- 세 번째 카드 -->
-                            <div class="service-card">
-                                <div class="service-title">緊急対応</div>
-                                <p style="font-weight: bold; color: #ffffff; margin-bottom: 1em;">関東エリア 24時間対応</p>
-                                <p style="margin-bottom: 0;">屋内用端末材、接続端子については各材を常備：</p>
-                                <div class="tag-container">
-                                    <span class="sq-tag">22 sq</span>
-                                    <span class="sq-tag">38 sq</span>
-                                    <span class="sq-tag">60 sq</span>
-                                    <span class="sq-tag">100 sq</span>
-                                </div>
-                            </div>
-                        </article>
-
-                        <article id="work">
-                            <h2 class="major">会社紹介</h2>
-                            <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
-                            
-                            <div class="table-wrapper">
-                                <table>
-                                    <tbody>
-                                        <tr>
-                                            <th>会社名</th>
-                                            <td>中村電気</td>
-                                        </tr>
-                                        <tr>
-                                            <th>登録電気事業者</th>
-                                            <td>東京都 第20211503号</td>
-                                        </tr>
-                                        <tr>
-                                            <th>適格請求書発行事業者</th>
-                                            <td>T5810947718409</td>
-                                        </tr>
-                                        <tr>
-                                            <th>代表</th>
-                                            <td>中村隆介</td>
-                                        </tr>
-                                        <tr>
-                                            <th>資格・認定</th>
-                                            <td>
-                                                第一種電気工事士 東京都 第58988号<br />
-                                                高圧電気取扱業務 第23733号<br />
-                                                高圧ケーブル工事技術認定 第54130号<br />
-                                                地中線用GR付高圧負荷開閉器施工技術認定 第14284号
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <ul class="actions">
-                                <li><a href="#contact" class="button primary">お問い合わせ</a></li>
-                            </ul>
-                        </article>
-
-                        <article id="about">
-                            <style>
-                                /* 요금표 타이틀 */
-                                .price-main-title {
-                                    text-align: center;
-                                    border-bottom: solid 2px rgba(255, 255, 255, 0.5);
-                                    padding-bottom: 0.8em;
-                                    margin-bottom: 1.5em;
-                                    font-size: 1.8em;
-                                    font-weight: bold;
-                                    letter-spacing: 0.1em;
-                                    color: #ffffff;
-                                }
-                                .price-card {
-                                    border: solid 1px rgba(255, 255, 255, 0.15);
-                                    border-radius: 8px;
-                                    margin-bottom: 2em;
-                                    overflow: hidden;
-                                    background-color: rgba(255, 255, 255, 0.05);
-                                }
-                                .price-card-header {
-                                    background-color: rgba(255, 255, 255, 0.1);
-                                    color: #ffffff;
-                                    padding: 1.2em 1.5em;
-                                    font-weight: bold;
-                                    font-size: 1.1em;
-                                    border-bottom: solid 1px rgba(255, 255, 255, 0.15);
-                                }
-                                .price-card-body {
-                                    padding: 1.5em;
-                                    background-color: transparent;
-                                }
-                                .price-row {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    padding: 0.8em 0;
-                                }
-                                .price-group {
-                                    display: flex;
-                                    align-items: center;
-                                }
-                                .price-label-main {
-                                    width: 80px;
-                                    font-weight: bold;
-                                    flex-shrink: 0;
-                                }
-                                .price-label-sub {
-                                    width: 80px;
-                                    flex-shrink: 0;
-                                }
-                                .price-value {
-                                    font-weight: bold;
-                                    font-size: 1.1em;
-                                    text-align: right;
-                                    color: #ffffff;
-                                }
-                                /* 항목 사이 점선 스타일 */
-                                .price-divider {
-                                    border-bottom: 1px dotted rgba(255, 255, 255, 0.25);
-                                    margin: 0.5em 0 1em 0;
-                                }
-                                /* 주의사항 강조 스타일 (어두운 배경용 오렌지/노랑계열) */
-                                .price-notes {
-                                    margin-top: 1em;
-                                    padding-top: 1em;
-                                    border-top: dotted 1px rgba(255, 255, 255, 0.25);
-                                    font-size: 0.9em;
-                                    color: #ff9f43; 
-                                    font-weight: bold;
-                                    line-height: 1.6;
-                                }
-                                /* 긴급대응 강조 스타일 */
-                                .price-emergency {
-                                    display: flex;
-                                    justify-content: space-between;
-                                    align-items: center;
-                                    padding: 1.5em;
-                                    border: solid 2px #f39c12; 
-                                    color: #fbd38d; /* 시인성 높은 밝은 주황/노랑 텍스트 */
-                                    background-color: rgba(243, 156, 18, 0.1); 
-                                    border-radius: 8px;
-                                    margin-bottom: 2em;
-                                    font-weight: bold;
-                                    font-size: 1.1em;
-                                }
-                                .price-footer-note {
-                                    border: solid 1px rgba(255, 255, 255, 0.15);
-                                    border-radius: 8px;
-                                    padding: 1.2em;
-                                    text-align: center;
-                                    font-size: 0.9em;
-                                    color: #e2e8f0;
-                                    background-color: rgba(255, 255, 255, 0.05);
-                                }
-                                @media screen and (max-width: 480px) {
-                                    .price-emergency {
-                                        flex-direction: column;
-                                        gap: 10px;
-                                        text-align: center;
-                                    }
-                                }
-                            </style>
-
-                            <h2 class="price-main-title">中村電気 料金表</h2>
-                            
-                            <div class="price-card">
-                                <div class="price-card-header">☆高圧ケーブル端末作成</div>
-                                <div class="price-card-body">
-                                    <div style="display: flex; flex-direction: column;">
-                                        <!-- (片側) 영역 -->
-                                        <div>
-                                            <div class="price-row">
-                                                <div class="price-group">
-                                                    <span class="price-label-main">(片側)</span>
-                                                    <span class="price-label-sub">昼間</span>
-                                                </div>
-                                                <span class="price-value">¥30,000</span>
-                                            </div>
-                                            <div class="price-row">
-                                                <div class="price-group">
-                                                    <span class="price-label-main"></span>
-                                                    <span class="price-label-sub">夜間</span>
-                                                </div>
-                                                <span class="price-value">¥38,000</span>
-                                            </div>
-                                        </div>
-                                        
-                                        <!-- 점선 추가 -->
-                                        <div class="price-divider"></div>
-                                        
-                                        <!-- (両側) 영역 -->
-                                        <div>
-                                            <div class="price-row">
-                                                <div class="price-group">
-                                                    <span class="price-label-main">(両側)</span>
-                                                    <span class="price-label-sub">昼間</span>
-                                                </div>
-                                                <span class="price-value">¥50,000</span>
-                                            </div>
-                                            <div class="price-row">
-                                                <div class="price-group">
-                                                    <span class="price-label-main"></span>
-                                                    <span class="price-label-sub">夜間</span>
-                                                </div>
-                                                <span class="price-value">¥64,000</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- 주의사항 강조 텍스트 -->
-                                    <div class="price-notes">
-                                        ※端末、接続材料代が別途掛かります。<br>
-                                        ※柱上端末は非対応
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="price-card">
-                                <div class="price-card-header">☆高圧交流耐圧試験</div>
-                                <div class="price-card-body">
-                                    <div class="price-row">
-                                        <span class="price-label-sub">昼間</span>
-                                        <span class="price-value">¥50,000</span>
-                                    </div>
-                                    <div class="price-row">
-                                        <span class="price-label-sub">夜間</span>
-                                        <span class="price-value">¥64,000</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="price-card">
-                                <div class="price-card-header">☆地絡継電器動作試験</div>
-                                <div class="price-card-body">
-                                    <div class="price-row">
-                                        <span class="price-label-sub">昼間</span>
-                                        <span class="price-value">¥30,000</span>
-                                    </div>
-                                    <div class="price-row">
-                                        <span class="price-label-sub">夜間</span>
-                                        <span class="price-value">¥38,500</span>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <!-- 긴급대응 강조 디자인 -->
-                            <div class="price-emergency">
-                                <span>☆緊急対応</span>
-                                <span>上記業務費用 + ¥20,000</span>
-                            </div>
-
-                            <div class="price-footer-note">
-                                ※上記は税抜価格、別途消費税をお願いします。
-                            </div>
-                        </article>
-
-                        <article id="contact">
-                            <h2 class="major">お問い合わせ・ご相談</h2>
-                            
-                            <p>お電話が繋がりにくい場合は、<br/>
-                            下記フォームからお気軽にご相談ください。<br/>
-                            試験対象機器の種類・容量・数量など事前情報を<br/>
-                            添付していただけると、より正確な無料見積もりが可能です。<br/>
-                            <strong>24時間以内に確認してご連絡いたします。</strong></p>
-
-                            <ul class="actions fit">
-                                <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSd9yM66cDCSJtaldNBPDT727zr12wlIrJ7ulFmDXWp8ff9wvQ/viewform" target="_blank" class="button primary fit icon solid fa-envelope">無料見積もり・相談フォームを開く</a></li>
-                            </ul>
-
-                            <hr />
-                            
-                            <h4>お電話でのご相談</h4>
-                            <ul class="alt">
-                                <li><strong>電話番号 : </strong> 080-6376-3177</li>
-                                <li><strong>対応時間 : </strong> 平日・土日祝日 24時間対応</li>
-                            </ul>
-                        </article>
-
+                    <div class="service-card">
+                        <div class="service-title">高圧ケーブル端末作成 〜 端子接続</div>
+                        <ul class="service-list">
+                            <li>モールド端子接続</li>
+                            <li>ピラー端子接続</li>
+                            <li>RD端子接続</li>
+                        </ul>
+                        <p class="gray-note">※柱上端末は非対応とさせていただきます。</p>
                     </div>
 
-                <footer id="footer">
-                    <ul class="icons">
-                        <li><a href="https://www.instagram.com/nakaden_tokyo/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                    <div class="service-card">
+                        <div class="service-title">高圧交流耐圧試験 ／ 方向性地絡継電器動作試験</div>
+                        <p style="line-height: 1.7; margin-bottom: 1.5em;">
+                            専用試験機とポータブル電源による<br>
+                            準備時間短縮、省スペース、低騒音でのスマートな竣工試験をご提供いたします。
+                        </p>
+                        <p class="blue-note">【試験成績書】 即日発行（PDFファイル送信）</p>
+                    </div>
+
+                    <div class="service-card">
+                        <div class="service-title">緊急対応</div>
+                        <p style="font-weight: bold; color: #ffffff; margin-bottom: 1em;">関東エリア 24時間対応</p>
+                        <p style="margin-bottom: 0;">屋内用端末材、接続端子については各材を常備：</p>
+                        <div class="tag-container">
+                            <span class="sq-tag">22 sq</span>
+                            <span class="sq-tag">38 sq</span>
+                            <span class="sq-tag">60 sq</span>
+                            <span class="sq-tag">100 sq</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article id="work">
+                    <style>
+                        .work-header { margin-bottom: 2em; }
+                        .work-sub {
+                            color: #63b3ed; font-weight: bold; font-size: 0.85em; letter-spacing: 0.15em; margin-bottom: 10px; display: block;
+                        }
+                        .work-main-title {
+                            border-bottom: solid 2px rgba(255, 255, 255, 0.5);
+                            padding-bottom: 0.5em;
+                            margin-bottom: 1.5em;
+                            font-size: 2em;
+                            font-weight: bold;
+                            color: #ffffff;
+                        }
+                    </style>
+                    <header class="work-header">
+                        <span class="work-sub">COMPANY PROFILE</span>
+                        <h2 class="work-main-title">会社紹介</h2>
+                    </header>
+                    <span class="image main"><img src="images/pic02.jpg" alt="" /></span>
+                    
+                    <div class="table-wrapper">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <th>会社名</th>
+                                    <td>中村電気</td>
+                                </tr>
+                                <tr>
+                                    <th>登録電気事業者</th>
+                                    <td>東京都 第20211503号</td>
+                                </tr>
+                                <tr>
+                                    <th>適格請求書発行事業者</th>
+                                    <td>T5810947718409</td>
+                                </tr>
+                                <tr>
+                                    <th>代表</th>
+                                    <td>中村隆介</td>
+                                </tr>
+                                <tr>
+                                    <th>資格・認定</th>
+                                    <td>
+                                        第一種電気工事士 東京都 第58988号<br />
+                                        高圧電気取扱業務 第23733号<br />
+                                        高圧ケーブル工事技術認定 第54130号<br />
+                                        地中線用GR付高圧負荷開閉器施工技術認定 第14284号
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <ul class="actions">
+                        <li><a href="#contact" class="button primary">お問い合わせ</a></li>
                     </ul>
-                    <p class="copyright">&copy; 中村電気</p>
-                </footer>
+                </article>
+
+                <article id="about" style="position: relative;">
+                    <style>
+                        /* 화면 전환 버튼 (X버튼 스타일로 배경/테두리 제거 및 아이콘화) */
+                        .view-toggle-btn {
+                            position: absolute;
+                            top: 2rem;
+                            left: 2rem;
+                            background: none;
+                            border: none;
+                            color: rgba(255, 255, 255, 0.6);
+                            padding: 0;
+                            cursor: pointer;
+                            transition: all 0.3s ease;
+                            z-index: 10;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            width: 44px;
+                            height: 44px;
+                        }
+                        .view-toggle-btn:hover {
+                            color: #ffffff;
+                            transform: scale(1.1);
+                        }
+
+                        /* 통합된 요금표 스타일 */
+                        .price-main-title {
+                            text-align: center; 
+                            border-bottom: solid 2px rgba(255, 255, 255, 0.5); 
+                            padding-bottom: 0.8em; 
+                            margin-bottom: 1.5em; 
+                            font-size: 1.8em; 
+                            font-weight: bold; 
+                            letter-spacing: 0.1em; 
+                            color: #ffffff;
+                        }
+                        
+                        .price-table-wrapper {
+                            overflow-x: auto; margin-bottom: 2em; background-color: rgba(255, 255, 255, 0.05); border: solid 1px rgba(255, 255, 255, 0.15); border-radius: 8px;
+                        }
+                        .price-table { width: 100%; border-collapse: collapse; min-width: 600px; }
+                        .price-table th, .price-table td { border: 1px solid rgba(255, 255, 255, 0.15); padding: 1.2em 1em; vertical-align: middle; }
+                        .price-table thead th { background-color: rgba(255, 255, 255, 0.1); color: #ffffff; font-weight: bold; text-align: center; white-space: nowrap; }
+                        
+                        /* 표 2용 정렬 옵션 */
+                        .price-table.v2 thead th:first-child { text-align: left; }
+                        .group-header-blue { background-color: rgba(99, 179, 237, 0.1) !important; color: #63b3ed !important; text-align: left !important; border-left: 4px solid #63b3ed !important; font-size: 1.1em; }
+                        .group-header-orange { background-color: rgba(243, 156, 18, 0.1) !important; color: #fbd38d !important; text-align: left !important; border-left: 4px solid #f39c12 !important; font-size: 1.1em; }
+                        
+                        .price-table td.item-name { font-weight: bold; color: #ffffff; }
+                        .price-table .item-note { display: block; font-size: 0.85em; color: #e2e8f0; margin-top: 0.5em; line-height: 1.4; font-weight: normal; }
+                        .price-table .center-align { text-align: center; white-space: nowrap; }
+                        .price-table .price-val { text-align: right; font-weight: bold; color: #ffffff; white-space: nowrap; }
+                        
+                        /* 긴급대응 기본 (주황색 - V1) */
+                        .price-emergency {
+                            display: flex; justify-content: space-between; align-items: center; padding: 1.5em; border: solid 2px #f39c12; color: #fbd38d; background-color: rgba(243, 156, 18, 0.1); border-radius: 8px; margin-bottom: 2em; font-weight: bold; font-size: 1.1em;
+                        }
+                        /* 긴급대응 강조 (빨간색 - V2) */
+                        .price-emergency.v2 { border: solid 2px #fc8181; color: #fc8181; background-color: rgba(252, 129, 129, 0.1); }
+                        
+                        .price-footer-note { border: solid 1px rgba(255, 255, 255, 0.15); border-radius: 8px; padding: 1.2em; text-align: center; font-size: 0.9em; color: #e2e8f0; background-color: rgba(255, 255, 255, 0.05); }
+                        
+                        /* 모바일 대응 */
+                        @media screen and (max-width: 736px) { 
+                            .view-toggle-btn { top: 1rem; left: 1rem; width: 36px; height: 36px; }
+                            .view-toggle-btn svg { width: 24px; height: 24px; }
+                        }
+                        @media screen and (max-width: 480px) { 
+                            .price-emergency { flex-direction: column; gap: 10px; text-align: center; } 
+                        }
+                    </style>
+
+                    <!-- 왼쪽 위 얇은 아이콘 전환 버튼 (텍스트 제거 및 SVG 적용) -->
+                    <button class="view-toggle-btn" onclick="togglePriceTable()" title="表示切替">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M7 10L3 6l4-4" />
+                            <path d="M21 6H3" />
+                            <path d="M17 14l4 4-4 4" />
+                            <path d="M3 18h18" />
+                        </svg>
+                    </button>
+                    
+                    <h2 class="price-main-title">中村電気 料金表</h2>
+                    
+                    <!-- 요금표 버전 1 -->
+                    <div id="price-v1">
+                        <div class="price-table-wrapper">
+                            <table class="price-table">
+                                <thead>
+                                    <tr>
+                                        <th>項目 / 作業内容</th>
+                                        <th>区分</th>
+                                        <th>昼間料金</th>
+                                        <th>夜間料金</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td rowspan="2" class="item-name">
+                                            ☆ 高圧ケーブル端末作成<br>
+                                            <span class="item-note">※柱上端末は非対応<br>※端末、接続材料代が別途掛かります。</span>
+                                        </td>
+                                        <td class="center-align">(片端末)</td>
+                                        <td class="price-val">¥30,000</td>
+                                        <td class="price-val">¥45,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center-align">(両端末)</td>
+                                        <td class="price-val">¥50,000</td>
+                                        <td class="price-val">¥75,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆ 高圧交流耐圧試験</td>
+                                        <td class="center-align">-</td>
+                                        <td class="price-val">¥50,000</td>
+                                        <td class="price-val">¥75,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆ 方向性地絡継電器動作試験</td>
+                                        <td class="center-align">-</td>
+                                        <td class="price-val">¥50,000</td>
+                                        <td class="price-val">¥75,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td rowspan="2" class="item-name">☆ 端末作成 + 耐圧試験 セット</td>
+                                        <td class="center-align">(片端末)</td>
+                                        <td class="price-val">¥70,000</td>
+                                        <td class="price-val">¥110,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="center-align">(両端末)</td>
+                                        <td class="price-val">¥90,000</td>
+                                        <td class="price-val">¥140,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆ 耐圧試験 + DGR試験 セット</td>
+                                        <td class="center-align">-</td>
+                                        <td class="price-val">¥90,000</td>
+                                        <td class="price-val">¥140,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="price-emergency">
+                            <span>☆緊急出勤費 (即日対応チャージ)</span>
+                            <span>上記業務費用 + ¥20,000</span>
+                        </div>
+                        <div class="price-footer-note">※※上記は税抜価格、別途消費税をお願いします。</div>
+                    </div>
+
+                    <!-- 요금표 버전 2 (초기에는 숨김 처리) -->
+                    <div id="price-v2" style="display: none;">
+                        <div class="price-table-wrapper">
+                            <table class="price-table v2">
+                                <thead>
+                                    <tr>
+                                        <th style="width: 50%;">作業・試験項目</th>
+                                        <th style="width: 25%;">昼間</th>
+                                        <th style="width: 25%;">夜間</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <th colspan="3" class="group-header-blue">☆高圧ケーブル端末作成</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">
+                                            (片端末)
+                                            <span class="item-note">※柱上端末は非対応<br>※端末、接続材料代が別途掛かります。</span>
+                                        </td>
+                                        <td class="center-align">¥30,000</td>
+                                        <td class="center-align">¥45,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">
+                                            (両端末)
+                                            <span class="item-note">※柱上端末は非対応<br>※端末、接続材料代が別途掛かります。</span>
+                                        </td>
+                                        <td class="center-align">¥50,000</td>
+                                        <td class="center-align">¥75,000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th colspan="3" class="group-header-blue">☆単体試験業務</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆高圧交流耐圧試験</td>
+                                        <td class="center-align">¥50,000</td>
+                                        <td class="center-align">¥75,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆方向性地絡継電器動作試験</td>
+                                        <td class="center-align">¥50,000</td>
+                                        <td class="center-align">¥75,000</td>
+                                    </tr>
+
+                                    <tr>
+                                        <th colspan="3" class="group-header-orange">☆お得なセットプラン</th>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆端末作成 + 耐圧試験 セット (片端末)</td>
+                                        <td class="center-align">¥70,000</td>
+                                        <td class="center-align">¥110,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆端末作成 + 耐圧試験 セット (両端末)</td>
+                                        <td class="center-align">¥90,000</td>
+                                        <td class="center-align">¥140,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="item-name">☆耐圧試験 + DGR試験 セット</td>
+                                        <td class="center-align">¥90,000</td>
+                                        <td class="center-align">¥140,000</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="price-emergency v2">
+                            <span>☆緊急出勤費 (即日対応チャージ)</span>
+                            <span>上記業務費用 + ¥20,000</span>
+                        </div>
+                        <div class="price-footer-note">※※上記は税抜価格、別途消費税をお願いします。</div>
+                    </div>
+                </article>
 
             </div>
+
+            <footer id="footer">
+                <ul class="icons">
+                    <li><a href="https://www.instagram.com/nakaden_tokyo/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+                </ul>
+                <p class="copyright">&copy; 中村電気</p>
+            </footer>
+
+        </div>
 
         <div id="bg"></div>
 
         <script src="assets/js/jquery.min.js"></script>
-            <script src="assets/js/browser.min.js"></script>
-            <script src="assets/js/breakpoints.min.js"></script>
-            <script src="assets/js/util.js"></script>
-            <script src="assets/js/main.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        
+        <!-- 표 전환을 위한 자바스크립트 -->
+        <script>
+            function togglePriceTable() {
+                var v1 = document.getElementById('price-v1');
+                var v2 = document.getElementById('price-v2');
+                if (v1.style.display === 'none') {
+                    v1.style.display = 'block';
+                    v2.style.display = 'none';
+                } else {
+                    v1.style.display = 'none';
+                    v2.style.display = 'block';
+                }
+            }
+        </script>
 
     </body>
 </html>
